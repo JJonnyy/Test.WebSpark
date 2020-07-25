@@ -28,7 +28,7 @@ body {
 header {
    max-width: 500px;
    height: 120px;
-   margin: 0 auto;
+   margin:  0 auto;
    margin-bottom: 10px;
    padding-left: 25px;
 }
@@ -205,10 +205,12 @@ h1 {
 
    .start{
      margin-left: 80px; 
+     transition: all 1s;
    }
    header{
       margin-bottom: 45px;
       margin-top: 10px;
+      transition: all 1s;
 
    }
   
@@ -226,6 +228,7 @@ h1 {
       padding-left: 110px;
       width: 650px;
       margin-top: 0;
+      transition: all 1s;
 
    }
 
@@ -241,10 +244,19 @@ h1 {
    }
 }
 @media screen and (max-width:800px){
-   .header{
-      width: 400px;
-      
-      margin-right: 0 auto;
+   header{
+      width: 500px;
+      margin-right: 0 ;
+      transition: all 1s;
+   }
+
+   h1{
+      font-size: 25px;
+      transition: all 1s;
+   }
+
+   .start_name{
+      flex-wrap: wrap;
       transition: all 1s;
    }
 }
