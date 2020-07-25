@@ -233,3 +233,18 @@ h1 {
       margin-top: 0;
    }
 }
+
+@media screen and (max-width:1000px){
+   .list_view {
+      width: 75%;
+      transition: all 1s;
+   }
+}
+@media screen and (max-width:800px){
+   .header{
+      width: 400px;
+      
+      margin-right: 0 auto;
+      transition: all 1s;
+   }
+}
