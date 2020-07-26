@@ -160,6 +160,20 @@ h1 {
    width: 292px;
 }
 
+.btn_list{
+   /* width: 60px;
+   height: 24px; */
+   padding: 0;
+   margin: 0;
+   display: flex;
+
+}
+
+.btn:focus,.btn.focus,.btn-primary:focus, .btn-primary.focus{
+   /* border:none; */
+   box-shadow:none;
+}
+
 .shape2 {
    max-width: 175px;
    height: 438px;
