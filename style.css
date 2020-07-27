@@ -1,21 +1,19 @@
 body {
    background: #FAFAFA;
-   /* max-width: 1980px; */
    margin: 0 auto;
    font-family: 'Montserrat', sans-serif;
    font-size: 15px;
-
 }
 
 * {
    margin: 0;
    padding: 0;
+   outline: none;
 }
 
 .logo {
    width: 100%;
    transition: all 1s;
-
 }
 
 .shape1 {
@@ -39,7 +37,6 @@ header {
 
 .start {
    height: 31px;
-   /* margin-left: px; */
    display: flex;
    justify-content: start;
    align-items: center;
@@ -59,7 +56,7 @@ h1 {
    font-weight: 500;
 }
 
-.start span {
+.start>span {
    width: 149px;
    height: 31px;
    border: 1px solid #4090DB;
@@ -79,6 +76,18 @@ h1 {
 
 .indent {
    margin-right: 30px;
+}
+.number{
+   font-size: 17px;
+   font-weight: 900;
+   color:#3D4044;
+   font-family: "ProximaNovaBold";
+}
+
+.prox{
+   font-size: 17px;
+   font-family: "ProximaNovaRegular";
+   font-weight: 100;
 }
 
 .list_view {
@@ -161,18 +170,29 @@ h1 {
 }
 
 .btn_list{
-   /* width: 60px;
-   height: 24px; */
    padding: 0;
    margin: 0;
    display: flex;
-
 }
 
 .btn:focus,.btn.focus,.btn-primary:focus, .btn-primary.focus{
-   /* border:none; */
    box-shadow:none;
 }
+
+.card-body {
+   -ms-flex: 1 1 auto;
+   flex: 1 1 auto;
+   min-height: 0;
+   padding: 0;
+ }
+
+ .caption {
+   padding-top: 0;
+   padding-bottom: 0;
+   color: #6c757d;
+   text-align: left;
+   caption-side: bottom;
+ }
 
 .shape2 {
    max-width: 175px;
@@ -187,32 +207,57 @@ h1 {
 .load_more{
    width: 124px;
    height: 28px;
+   background: #FAFAFA;
    border:1px solid #000000;
    border-radius: 14px;
    display:flex;
    justify-content: center;
    align-items:center;
+   margin: 0 auto;   
 }
 
+.load_more:focus{
+   outline: none;
+}
 
 @font-face {
    font-family: 'Myriad Pro Regular';
-   src: url('MyriadPro-Regular.eot');
-   src: url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
-      url('MyriadPro-Regular.woff') format('woff'),
-      url('MyriadPro-Regular.ttf') format('truetype');
+   src: url('/fonts/MyriadPro-Regular.eot');
+   src: url('/fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/MyriadPro-Regular.woff') format('woff'),
+      url('/fonts/MyriadPro-Regular.ttf') format('truetype');
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: 'Helvetica Neue Cyr Thin';
-   src: url('HelveticaNeueCyr-Thin.eot');
-   src: url('HelveticaNeueCyr-Thin.eot?#iefix') format('embedded-opentype'),
-      url('HelveticaNeueCyr-Thin.woff') format('woff'),
-      url('HelveticaNeueCyr-Thin.ttf') format('truetype');
+   src: url('/fonts/HelveticaNeueCyr-Thin.eot');
+   src: url('/fonts/HelveticaNeueCyr-Thin.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/HelveticaNeueCyr-Thin.woff') format('woff'),
+      url('/fonts/HelveticaNeueCyr-Thin.ttf') format('truetype');
    font-weight: normal;
    font-style: normal;
+}
+
+@font-face {
+   font-family: "ProximaNovaRegular";
+   src: url("/fonts/ProximaNovaRegular.eot");
+   src: url("/fonts/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+   url("/fonts/ProximaNovaRegular.woff") format("woff"),
+   url("/fonts/ProximaNovaRegular.ttf") format("truetype");
+   font-style: normal;
+   font-weight: normal;
+}
+
+@font-face {
+   font-family: "ProximaNovaBold";
+   src: url("/fonts/ProximaNovaBold.eot");
+   src: url("/fonts/ProximaNovaBold.eot?#iefix")format("embedded-opentype"),
+   url("/fonts/ProximaNovaBold.woff") format("woff"),
+   url("/fonts/ProximaNovaBold.ttf") format("truetype");
+   font-style: normal;
+   font-weight: normal;
 }
 
 @media screen and (min-width:1980px){
@@ -225,11 +270,8 @@ h1 {
       margin-bottom: 45px;
       margin-top: 10px;
       transition: all 1s;
-
    }
-  
 }
-
 
 @media screen and (max-width:1466px){
 
